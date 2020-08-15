@@ -172,9 +172,12 @@ int main() {
     char *buffer = (char *) ft_malloc(10);
 
     if (buffer == NULL) {
-        printf("Can not locate memmory\n");
+        printf("Can not alocate memmory\n");
         return 0;
     }
+    
+    buffer[9] = 'a';
+    printf("Mem: %c\n", buffer[9]);
 }
 
 //#include <time.h>
